@@ -1,0 +1,157 @@
+table{
+           
+}
+tr td{
+ border: solid black;
+ color: rgb(253, 6, 6);
+}
+
+body{
+    background-color: rgb(202, 202, 248);
+}
+*{
+    margin: 5px;
+    padding: 20px;
+    box-sizing:border-box ;
+}
+.he{
+
+}
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(55, 193, 228);
+    font-family: 'Playfair Display', serif;
+    background-attachment: fixed;
+    block-size: 25px;
+    
+    }
+    #Footer{
+        margin: 20px;
+
+    }
+    input{
+        margin-bottom: 20px;
+    }
+    .Myself{
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: rgb(5, 51, 36);
+        background-color: rgb(247, 189, 255) ;
+    }
+    .start{
+        color:whitesmoke ;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 20px;
+        align-items: center;
+        }
+        .nav-links{
+            display: flex;
+            justify-content: space-around;
+            width:30%;
+            }
+            .nav-links li{
+                list-style: none;
+                }
+                .nav-links a{
+                color: cornsilk;
+                text-decoration: none;
+                letter-spacing: 3px;
+                font-weight: bold;
+                font-size: 14px;
+                
+                }
+                .bugger{
+                    display: none;
+                }
+                .bugger div{
+                width: 25PX;
+                height:5px;
+                background-color: rgb(226,226,226);
+                margin: 5PX;
+                
+                }
+                @media screen and (max-width:1024px){
+                    .nav-links{
+                        width:60%;
+                    }
+                    }
+                    @media screen and (max-width:768px)
+                    {
+                        html, body {
+                            max-width: 100%;
+                            overflow-x: hidden;
+                        }
+                    body{
+                        overflow-x: hidden;
+                    }
+                    .nav-links{
+                    position: absolute;
+                    right: 0px;
+                    height: 150vh;
+                    top:8vh;
+                    background-color:lightblue;
+                    text-align: end;
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 50%;
+                    transform: translateX(100%);
+                    transition: transform 0.5 ease-in;
+                
+                    }
+                   
+                    .nav-links li
+                    {   text-align: center;
+                        width: 180px;
+                        height: 350px;
+                        border: 1px solid rgb(140, 140, 228);
+                        color: rgb(225, 180, 243);
+                        background-color: rgb(40, 85, 231);
+                        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                        font-size: 40px;
+                        font-weight: bold;
+                        border-top: 0px;
+                        border-bottom: 0px;
+                    }
+                    
+                    .bugger{
+                    display: block;
+                    }
+                    .Intro{
+                        text-align: center;
+                        color: whitesmoke;
+                        font-size: 22px;
+                        font-weight: bold;
+                    }
+                    .start{
+                        font-size: 24px;
+                    }
+                    
+                    }
+                .nav-active{
+                    transform: translateX(0%);
+                }
+                @keyframes navLinkFade{
+                    from{
+                        opacity:0;
+                        transform: translateX(50px);
+                    }
+                    to{
+                        opacity: 1;
+                        transform: translateX(0px);
+                    }
+                }
+                .toggle .line1{
+                    transform: rotate(-45deg) translate(-8px,6px);
+                }
+                .toggle .line2{
+                  opacity: 0;
+                }
+                .toggle .line3{
+                    transform: rotate(45deg) translate(-8px,-6px);
+                }
